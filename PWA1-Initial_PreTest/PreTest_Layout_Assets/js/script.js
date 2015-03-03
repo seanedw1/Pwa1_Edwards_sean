@@ -5,10 +5,23 @@
 alert("Welcome to our store");
 
 
-prompt("cost of item");
+var Ocost=prompt("cost of item");
 
-prompt("discount percentage");
+
+
+if (Ocost ==="") {
+    var Ocost = (prompt("you did not enter a price"));
+    console.log("please enter a price");
+}
+
+var Dpercent=prompt("discount percentage");
 
 console.log("hello sean");
 
-alert("hello, your orignal price was with the discount of discount applied your new total is fCost");
+
+
+alert("hello, your orignal price was " +Ocost+" with the discount of " +Dpercent+ " discount applied your new total is fCost");
+
+
+
+
