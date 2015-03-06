@@ -4,24 +4,22 @@
 
 alert("Welcome to our store");
 
-
-var Ocost=prompt("cost of item");
-
+var originalPrice =prompt("cost of item");
 
 
-if (Ocost ==="") {
-    var Ocost = (prompt("you did not enter a price"));
+if (originalprice ==="") {
+    var originalprice= (prompt("you did not enter a price"));
     console.log("please enter a price");
 }
 
-var Dpercent=prompt("discount percentage");
+var discount=prompt("percentage of discount");
 
-console.log("hello sean");
+var discountAmount = discount/100*originalPrice;
 
+var finalPrice =originalPrice-discountAmount;
 
+alert("the cost after discount " +finalPrice+ " total savings of " +discountAmount);
 
-alert("hello, your orignal price was " +Ocost+" with the discount of " +Dpercent+ " discount applied your new total is fCost");
-
-
+console.log("the original price of item is " +originalPrice+ " with a discount of " +discountAmount+ " the final price is " +finalPrice);
 
 
