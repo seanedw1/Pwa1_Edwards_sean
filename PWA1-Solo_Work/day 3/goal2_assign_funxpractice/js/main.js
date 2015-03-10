@@ -1,3 +1,7 @@
+//sean edwards
+//pwa
+//3/7/15
+
 // self-executing function
 (function(){
 
@@ -16,10 +20,13 @@
          - return the name after it has been concatenated
          - console.log the answer outside of the function
 
-     3.  create a function named 'wordCount'
-         - accept 1 parameter into the function that is a long string of text words
-         - create a function that counts all the words and return the answer
+     3.  create a function named 'area'
+         - accept 2 parameters into the function for width and height
+         - create a function that calculates the area of a rectangle
+         - return the value to be used outside the function
          - console.log the answer outside of the function
+
+OPTIONAL!!
 
      4.  create a function named 'charCount'
          - accept 1 parameter into the function that is a long string of text
@@ -48,24 +55,96 @@
     var avgNumbers = function(arr){
 
         //CODE GOES HERE
+
     };
 
     console.log('avg number = ', avgNumbers([1,2,3,4,5]));
+
+
+
+
+
+    /*
+    1.  create a function named 'avgNumbers'
+    - accept 1 parameter into the function that will be an array of unlimited numbers
+    - find the average of all the numbers
+    - return the average from the function
+    - console.log the answer outside of the function
+    */
 
     //--------------------------------------------------------
     console.log("2. concat first and last name");
 
         //PUT FUNCTION HERE
 
+
+    var firstName="james";
+    var lastName="bond";
+
+    function fullName(firstName,lastName){
+
+        return firstName+" " + lastName;
+    }
     console.log(fullName('James', 'Bond'));
 
+
+    /*
+    2.  create a function named 'fullName'
+    - accept 2 parameters into the function that are strings (firstname and lastname)
+    - return the name after it has been concatenated
+    - console.log the answer outside of the function
+    */
+
     //--------------------------------------------------------
-    console.log("3. word count");
+    console.log("3. area");
     var ipsum = "this is test text that is being used as input to a function"
 
         //PUT FUNCTION HERE
+var width=9;
+    var length=5;
 
-    console.log(wordCount(ipsum));
+    function area(w,l){
+
+var area = 5*9;
+
+    }
+    return area
+    console.log(area(ipsum));
+
+    /**
+     var width=10;
+     var height=25;
+
+     var total = calcArea(width,height);
+
+     //call function and pass arguments
+
+     //create basic function
+     //catches width and height in the parameters(w,h)
+
+     function calcArea(w,h){
+
+    var area=w*h;
+    console.log(area);
+    return area;
+}
+
+     */
+
+      /*
+    3.  create a function named 'area'
+    - accept 2 parameters into the function for width and height
+    - create a function that calculates the area of a rectangle
+    - return the value to be used outside the function
+    - console.log the answer outside of the function
+
+
+    */
+
+
+
+//OPTIONAL SECTION STARTS HERE
+
 
     //--------------------------------------------------------
     console.log("4. sentence char count");

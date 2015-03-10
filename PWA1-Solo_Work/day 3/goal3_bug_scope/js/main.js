@@ -1,37 +1,11 @@
 /*
 	PWA1 Goal 3
+	NAME:
 	JavaScript Debugging & Scope
 */
 
 
 (function(){
-
-/*
-	===================================================================
-	Goal 2 Recap
-*/
-
-console.log('------ Recap from the previous lecture ----------');
-
-/*******************************************
- STUDENT ACTIVITY 1:
-
- We are starting the review with an assessment to test your comprehension of
- some of the course materials from Goal 2
-
-     1.  an array of students is provided for you
-     2.  console.log the number of items in the array
-     3.  create a for loop
-         - console.log the index number
-         - console.log the student name in the array that pertains to the index
-             number of the loop (i.e. if the loop is on index 1 then the student's
-             name of 'Bob' should be console.logged
- ********************************************/
-
-// Array - For Loop
-    var students1 = ['Bob','Christine','Sally','Jim'];
-
-
 
 
 /*
@@ -66,12 +40,13 @@ console.log('------ Recap from the previous lecture ----------');
     - keep the browsers console open at all times
     - use console.log EXTENSIVELY!!!!!!!
     - write JavaScript in external files
-    - take a break!
+    - take a break! If you step away from the code and come back with a fresh set of eyes,
+     that helps almost every time!
 
 */
-
-console.log('------ Debugging ----------');
-
+    -----------------------------------------------
+			STUDENT ACTIVITY - DEBUGGING
+    -----------------------------------------------
 /***********************
      For each of the examples below you will have to un-comment the code so the
      error in the code displays in the console.log.  You will want to determine
@@ -81,19 +56,24 @@ console.log('------ Debugging ----------');
      display.  You may want to see the error messages in Chrome and Firefox.
  ***********************/
 
- /*
-	//Example1
+
+ 
+	//ACTIVITY 1 - DEBUG!:
+	
 	var name = james, course = 'PWA1, month = 3;
 	console.log ("name: ", name + " / course: ", coures + " / month: ", month)
 
+    -----------------------------------------------
 
-    //Example2:
+    //ACTIVITY 2 - DEBUG!:
 	//string w/ escape charaters and mixed single/double quotes
 	var phrase = 'he's in ' + ' "PWA1' ";
 	console.log("phase 4: ", phr@se);
 
+    -----------------------------------------------
 
-    //Example3:
+    //ACTIVITY 3 - DEBUG!:
+    
 	//nested conditional statement
 	if (a === a){    //1st IF statement
 		//execute this block of code if a is equal to a
@@ -110,8 +90,10 @@ console.log('------ Debugging ----------');
 		console.log("nested conditional: 1st IF returned false);
 	};
 
+    -----------------------------------------------
 
-    //Example4:
+    //ACTIVITY 4 - DEBUG!:
+    
 	var value1 = 'Sunny';
 	var value2 = 10;
 	
@@ -145,8 +127,10 @@ console.log('------ Debugging ----------');
 	var moodType = mood(value1, value2);
 	console.log('mood: ', moodType);
 
+    -----------------------------------------------
 
-    //Example5:
+    //ACTIVITY 5 - DEBUG!:
+    //I know we haven't covered loops yet, but try your best!!!
 
     var myNums = [1, 2, 3, 4, 5];
     console.log(myNums);
@@ -164,9 +148,22 @@ console.log('------ Debugging ----------');
         console.log('What is at index ' + i + ' = ', myNums[i] );
     };
 
-*****************/
 
-/*
+    -----------------------------------------------
+    -----------------------------------------------
+
+					HOORAY!!!
+	  END OF HOMEWORK!!!!!  BELOW ARE OPTIONAL!!!!
+
+    -----------------------------------------------
+    -----------------------------------------------
+
+/* 
+
+    -----------------------------------------------
+				OPTIONAL SECTIONS
+    -----------------------------------------------
+    
 	===============================================
 	TRY, CATCH, THROW
 
@@ -192,6 +189,10 @@ console.log('------ Debugging ----------');
 
 
 /*
+    --------------------------------------------------------------------
+	ADVANCED READING - THIS IS JUST INFORMATION, NO CODING (OPTIONAL)
+    --------------------------------------------------------------------
+    
 	===================================================================
 	Scope & Context
 

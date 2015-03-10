@@ -15,6 +15,7 @@ var total = calcArea(width,height);
 
 //create basic function
 //catches width and height in the parameters(w,h)
+
 function calcArea(w,h){
 
     var area=w*h;
