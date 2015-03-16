@@ -25,6 +25,34 @@ console.log('------ STUDENT ACTIVITY 1 - ANSWERS BELOW ----------');
 // this is integrating multiple data types - object with an array of objects
 
 
+var obj1 = {
+    SchoolName : "fullsail",
+    address  : "123 university ave",
+    studentCount: 16000,
+    students: {
+        name: 'james bond',
+        GPA: 3.9,
+        classes: ['pwa1', 'pwa2']
+    },
+
+   showStudentCount: function(){
+
+       var newCnt = obj1.studentCount;
+      return newCnt;
+   }
+};
+
+
+console.log("school name dot syntax: " + obj1.SchoolName);
+console.log("school name index syntax: "+ obj1["SchoolName"]);
+
+console.log("student count: "+ obj1.showStudentCount());
+
+console.log("school address using index syntax: "+ obj1["address"]);
+
+console.log("student gpa using dot syntax: "+ obj1.students.GPA);
+console.log("student gpa using index syntax: " + obj1.students["GPA"]);
+
 
 /* ----------------------------------------------------------------------------
  STUDENT ACTIVITY 2:
