@@ -68,3 +68,5 @@ console.log("student gpa using index syntax: " + obj1.students["GPA"]);
 
 
 console.log('------ STUDENT ACTIVITY 2 - ANSWERS BELOW ----------');
+
+

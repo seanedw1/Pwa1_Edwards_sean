@@ -333,25 +333,41 @@ var nav2 = document.querySelector('#nav');
     */
     console.log('------------ TRAVERSAL -------------------');
 
+var apple = document.querySelectorAll('#nav li a')[2];
+console.log(apple);
+
+    console.log(apple.parentNode);
+    console.log(apple.parentNode.parentNode);
 
 
+    /*
+        ==================================================================
+        Manipulating Attributes
+        ------------------------------------------------------------------
+            - HTML elements have attributes, things like "href", "src", "title", etc
+            - To access these attributes, there are specific setter/getter methods.
 
-/*
-	==================================================================
-	Manipulating Attributes
-	------------------------------------------------------------------
-		- HTML elements have attributes, things like "href", "src", "title", etc
-		- To access these attributes, there are specific setter/getter methods.
+            Syntax:
+            - element.setAttribute(attr, value)
+                - always initializes an attribute to a new value
+            - element.getAttribute(attr)
+                - always returns a string
 
-        Syntax:
-        - element.setAttribute(attr, value)
-            - always initializes an attribute to a new value
-        - element.getAttribute(attr)
-            - always returns a string
+            attr = href, src, class
+    */
 
-        attr = href, src, class
-*/
 
+    var navLinks = document.querySelectorAll('#nav li');
+    for(i=0;i<navLinks.length;i++){
+
+      var href= navLinks[i].firstChild.getAttribute('href');
+        console.log('manipulation HREF:', href);
+
+        //check all classes
+        var aClass = navLinks[i].firstChild.getAttribute('class');
+        console.log('manipulation Class:',aClass);
+
+    };
 
 
 /*
@@ -370,6 +386,17 @@ var nav2 = document.querySelector('#nav');
 
 console.log('------------ Manipulating CSS Classes -------------------');
 
+
+navLinks[2].firstChild.setAttribute('class','navitem active');
+    var changeClass = navLinks[1].firstChild.setAttribute('href','http://google.com');
+
+    console.log('------------ Manipulating HTML Classes -------------------');
+
+    var navLinks = document.querySelectorAll('#nav a');
+    console.log(navLinks[2]);
+
+console.log(navLinks[2].innerHTML);//getter
+    navLinks[2].innerHTML = 'this links rocks';
 
 /*
 	==================================================================
